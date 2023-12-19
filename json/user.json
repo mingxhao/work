@@ -1,0 +1,62 @@
+[
+    {
+        "username": "user11",
+        "password": "password1",
+        "idType": "1",
+        "name": "张三",
+        "idNumber": "31011019800101001X",
+        "discountType": "成人",
+        "email": "user1@example.com",
+        "phoneType": "+86",
+        "phone": "13800138000",
+        "userType": "admin"
+    },
+    {
+        "username": "user22",
+        "password": "password2",
+        "idType": "B",
+        "name": "李四",
+        "idNumber": "E12345678",
+        "discountType": "儿童",
+        "email": "user2@example.com",
+        "phoneType": "+852",
+        "phone": "13900139000",
+        "userType": "user"
+    },
+    {
+        "username": "user33",
+        "password": "password3",
+        "idType": "2",
+        "name": "王五",
+        "idNumber": "A12345678",
+        "discountType": "学生",
+        "email": "user3@example.com",
+        "phoneType": "+853",
+        "phone": "13700137000",
+        "userType": "user"
+    },
+    {
+        "username": "user44",
+        "password": "password4",
+        "idType": "C",
+        "name": "赵六",
+        "idNumber": "B12345678",
+        "discountType": "残疾军人",
+        "email": "user4@example.com",
+        "phoneType": "+886",
+        "phone": "13600136000",
+        "userType": "user"
+    },
+    {
+        "username": "user55",
+        "password": "password5",
+        "idType": "G",
+        "name": "钱七",
+        "idNumber": "C12345678",
+        "discountType": "成人",
+        "email": "user5@example.com",
+        "phoneType": "+86",
+        "phone": "13500135000",
+        "userType": "user"
+    }
+]

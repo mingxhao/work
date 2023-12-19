@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国铁路12306网站</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/icon-font.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="init()">
+    <div class="main">
+        <div class="header">
+            <div class="apex">
+                <div class="main-apex">
+                    <h1 class="logo">
+                        <a href=""></a>
+                    </h1>
+                    <div class="apex-right">
+                        <div class="apex-search">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="搜索车票、餐饮、常旅客、相关规章">
+                                <div class="search-down">
+
+                                </div>
+                                <div class="search-history">
+
+                                </div>
+                            </div>
+                            <a href="" class="search-btn">
+                                <i class="icon icon-search"></i>
+                            </a>
+                        </div>
+                        <ul class="apex-menu">
+                            <li class="menu-line">
+                                <a href="" class="menu-nav-lang">无障碍</a>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line">
+                                <a href="" class="menu-nav-lang">爱心版</a>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-nav">
+                                <a href="" class="menu-nav-lang">English
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="menu-nav-box">
+                                    <li><a href="">简体中文</a></li>
+                                    <li><a href="">English</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-nav">
+                                <a href="" class="menu-nav-lang">我的12306
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="menu-nav-box" style="width: 130px;">
+                                    <li><a href="">火车票订单</a></li>
+                                    <li><a href="">候补订单</a></li>
+                                    <li><a href="">计次·定期票订单</a></li>
+                                    <li><a href="">约号订单</a></li>
+                                    <li><a href="">本人车票</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">我的餐饮·特产</a></li>
+                                    <li><a href="">我的保险</a></li>
+                                    <li><a href="">我的会员</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">查看个人信息</a></li>
+                                    <li><a href="">账户安全</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">乘车人</a></li>
+                                    <li><a href="">地址管理</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">温馨服务查询</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-login" style="display:flex; margin-left: 0;" id="noLogin">
+                                <a href="login.html">登录</a>
+                                <a href="regist.html">注册</a>
+                            </li>
+                            <li class="menu-line menu-logout" style="display: none;" id="alreadyLogin">
+                                <span>您好，</span>
+                                <a href="" id="username"></a>
+                                <span>&nbsp;|&nbsp;</span>
+                                <a href="" id="logout">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-box">
+                <ul class="nav">
+                    <li class="nav-btn active" style="width: 145px;">
+                        <a href="index.html" class="nav-logo">首页</a>
+                    </li>
+                    <li class="nav-btn" style="width: 145px;">
+                        <a href="" class="nav-logo">车票<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    购买
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="./bookTicket.html">单程</a></li>
+                                    <li class="nav-con-block"><a href="./bookTicket.html">往返</a></li>
+                                    <li class="nav-con-block"><a href="./bookTicket.html">中转换乘</a></li>
+                                    <li class="nav-con-block"><a href="./bookTicket.html">计次·定期票</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    变更
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">退票</a></li>
+                                    <li class="nav-con-block"><a href="">改签</a></li>
+                                    <li class="nav-con-block"><a href="">变更到站</a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title border-none">
+                                    更多
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">中银铁通卡</a></li>
+                                    <li class="nav-con-block border-none"><a href="">广九直通车</a></li>
+                                    <li class="nav-con-block"><a href="">国际列车</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">团购服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">务工人员</a></li>
+                                    <li class="nav-con-block"><a href="">学生团体</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">会员服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">会员管理</a></li>
+                                    <li class="nav-con-block"><a href="">积分账户</a></li>
+                                    <li class="nav-con-block"><a href="">积分兑换</a></li>
+                                    <li class="nav-con-block"><a href="">会员专享</a></li>
+                                    <li class="nav-con-block border-none"><a href="">会员中心</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">站车服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col4">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">重点旅客预约</a></li>
+                                    <li class="nav-con-block"><a href="">便民托运</a></li>
+                                    <li class="nav-con-block"><a href="">约车服务</a></li>
+                                    <li class="nav-con-block"><a href="">车站引导</a></li>
+                                    <li class="nav-con-block"><a href="">遗失物品查找</a></li>
+                                    <li class="nav-con-block"><a href="">动车组介绍</a></li>
+                                    <li class="nav-con-block"><a href="">定制接送</a></li>
+                                    <li class="nav-con-block"><a href="">接车风采</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">商旅服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">餐饮·特产</a></li>
+                                    <li class="nav-con-block"><a href="">旅游</a></li>
+                                    <li class="nav-con-block"><a href="">保险</a></li>
+                                    <li class="nav-con-block border-none"><a href="">雪具快运</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">出行指南<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    常见问题
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">车票</a></li>
+                                    <li class="nav-con-block"><a href="">购票</a></li>
+                                    <li class="nav-con-block"><a href="">改签</a></li>
+                                    <li class="nav-con-block"><a href="">退票</a></li>
+                                    <li class="nav-con-block"><a href="" class="more"> 更多>> </a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    旅客须知
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">身份核验</a></li>
+                                    <li class="nav-con-block"><a href="" class="more">更多>></a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title border-none">
+                                    相关章程
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">铁路旅客运输规程</a></li>
+                                    <li class="nav-con-block border-none"><a href="">广深港高速铁路跨境旅客运输组织规则</a></li>
+                                    <li class="nav-con-block"><a href="">铁路旅客禁止、限制携带和托运物品目录</a></li>
+                                    <li class="nav-con-block border-none"><a href="" class="more">更多>></a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">信息查询<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <h3 class="nav-title border-none">
+                                    常用查询
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">正晚点</a></li>
+                                    <li class="nav-con-block"><a href="">时刻表</a></li>
+                                    <li class="nav-con-block"><a href="">公布票价</a></li>
+                                    <li class="nav-con-block"><a href="">检票口</a></li>
+                                    <li class="nav-con-block"><a href="">起售时间</a></li>
+                                    <li class="nav-con-block border-none"><a href="">最新发布</a></li>
+                                    <li class="nav-con-block"><a href="">天气</a></li>
+                                    <li class="nav-con-block"><a href="">交通查询</a></li>
+                                    <li class="nav-con-block"><a href="">代售表</a></li>
+                                    <li class="nav-con-block"><a href="">客服电话</a></li>
+                                    <li class="nav-con-block"><a href="">列车状态</a></li>
+                                    <li class="nav-con-block border-none"><a href="">信用信息</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="banner">
+                <div class="pic">
+                    <a href="#" id="banner-url1">
+                        <img src="./img/banner1.jpg" alt="" id="banner1">
+                    </a>
+                    <a href="#" id="banner-url2">
+                        <img src="./img/banner2.jpg" alt="" id="banner2">
+                    </a>
+                    <a href="#" id="banner-url3">
+                        <img src="./img/banner3.jpg" alt="" id="banner3">
+                    </a>
+                    <a href="#" id="banner-url4">
+                        <img src="./img/banner4.jpg" alt="" id="banner4">
+                    </a>
+                    <a href="#" id="banner-url5">
+                        <img src="./img/banner5.jpg" alt="" id="banner5">
+                    </a>
+                    <a href="#" id="banner-url6">
+                        <img src="./img/banner6.jpg" alt="" id="banner6">
+                    </a>
+                </div>
+                <div class="switch">
+                    <ul>
+                        <li onclick="changebanner(1)" id="sw-1"></li>
+                        <li onclick="changebanner(2)" id="sw-2"></li>
+                        <li onclick="changebanner(3)" id="sw-3"></li>
+                        <li onclick="changebanner(4)" id="sw-4"></li>
+                        <li onclick="changebanner(5)" id="sw-5"></li>
+                        <li onclick="changebanner(6)" id="sw-6"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-index">
+                <ul class="search-left">
+                    <li id="chepiao" onclick="show(id,0)"><a><i class="icon icon-huoche"></i>车票</a></li>
+                    <li id="chaxun" onclick="show(id,0)"><a><i class="icon icon-chaxun"></i>常用查询</a></li>
+                    <li id="dingcan" onclick="show(id,0)"><a><i class="icon icon-dingcan"></i>订餐</a></li>
+                </ul>
+                <div class="search-main">
+                    <div class="search-main-item" style="display: none;" id="chepiaoitem">
+                        <div class="search-main-box">
+                            <div class="search-main-head">
+                                <ul>
+                                    <li id="dancheng" onclick="show('chepiao',0)"><a><i
+                                                class="icon icon-dancheng"></i>单程</a></li>
+                                    <li id="fancheng" onclick="show('chepiao',1)"><a><i
+                                                class="icon icon-wangfan"></i>返程</a></li>
+                                    <li id="huancheng" onclick="show('chepiao',2)"><a><i
+                                                class="icon icon-huancheng"></i>中转换乘</a></li>
+                                    <li id="gaiqian" onclick="show('chepiao',3)"><a><i
+                                                class="icon icon-chepiao"></i>退改签</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-main-body">
+                                <div class="search-body-item" style="display: none;" id="danchengitem">
+                                    <div class="search-form">
+                                        <div class="form-item-group">
+                                            <div class="form-item"> <label class="form-label">出发地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box"> <input type="text" class="input"> <i
+                                                            class="icon icon-place"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-item"> <label class="form-label">到达地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box"> <input type="text" class="input"> <i
+                                                            class="icon icon-place"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="city-change"> <i class="icon icon-qiehuan" id="danChange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">出发日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="text" class="input"> <i
+                                                        class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-check">
+                                            <div class="form-body">
+                                                <ul class="check-list">
+                                                    <li>学生 <i></i> </li>
+                                                    <li>高铁/动车 <i></i> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                    <div class="search-history">
+                                        <div class="search-history-body"> <i class="icon icon-caret-left"></i>
+                                            <div class="history-list-wrap">
+                                                <ul class="history-list" style="position: relative;">
+                                                    <li>北京-上海</li>
+                                                </ul>
+                                            </div> <i class="icon icon-caret-right"></i>
+                                        </div>
+                                        <div class="search-history-btn"> <a href="">删除历史</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="fanchengitem">
+                                    <div class="search-form">
+                                        <div class="form-item-group">
+                                            <div class="form-item"> <label class="form-label">出发地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box input-city"> <input type="hidden"> <input
+                                                            type="text" class="input" value=""> <i
+                                                            class="icon icon-place"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-item"> <label class="form-label">到达地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box input-city"> <input type="hidden" value="SHH">
+                                                        <input type="text" class="input" value=""> <i
+                                                            class="icon icon-place"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="city-change"> <i class="icon icon-qiehuan" title="切换"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">出发日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"
+                                                        value="" id="go_date"> <i class="icon icon-date"
+                                                        data-click="go_date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">返程日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"
+                                                        value=""> <i class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-check">
+                                            <div class="form-body">
+                                                <ul class="check-list check-list-right">
+                                                    <li>学生 <i></i> </li>
+                                                    <li>高铁/动车 <i></i> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="huanchengitem">
+                                    <div class="search-form">
+                                        <div class="form-item-group">
+                                            <div class="form-item"> <label class="form-label"> <b
+                                                        class="required">*</b>出发地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box input-city"> <input type="hidden" value="BJP">
+                                                        <input type="text" class="input" value=""> <i
+                                                            class="icon icon-place"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-item"> <label class="form-label"> <b
+                                                        class="required">*</b>到达地</label>
+                                                <div class="form-body">
+                                                    <div class="input-box input-city"> <input type="hidden" value="SHH">
+                                                        <input type="text" class="input" value=""> <i
+                                                            class="icon icon-place"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="city-change"> <i class="icon icon-qiehuan"></i> </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>乘车日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"> <i
+                                                        class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-check">
+                                            <div class="form-body">
+                                                <ul class="check-list check-list-right">
+                                                    <li>学生 <i></i> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="gaiqianitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <span class="form-label">查询类型</span>
+                                            <div class="form-body">
+                                                <ul class="radio-list radio-list-ding">
+                                                    <li class="active"> <i></i>订票日期 </li>
+                                                    <li> <i></i>乘车日期 </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>开始日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"
+                                                        value=""> <i class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>结束日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"
+                                                        value=""> <i class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required"></b>关键字</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="text" class="input search-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-main-item" style="display: none;" id="chaxunitem">
+                        <div class="search-main-box">
+                            <div class="search-main-head">
+                                <ul>
+                                    <li id="zhengwandian" onclick="show('chaxun',0)"><a> <i
+                                                class="icon icon-shijian"></i>正晚点</a>
+                                    </li>
+                                    <li id="jianpiaokou" onclick="show('chaxun',1)"><a> <i
+                                                class="icon icon-jianpiaokou"></i>检票口</a>
+                                    </li>
+                                    <li id="qishoushijian" onclick="show('chaxun',2)"><a> <i
+                                                class="icon icon-qishou"></i>起售时间</a>
+                                    </li>
+                                    <li id="tianqichaxun" onclick="show('chaxun',3)"><a> <i
+                                                class="icon icon-tianqi"></i>天气查询</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-main-body">
+                                <div class="search-body-item" style="display: none;" id="zhengwandianitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <span class="form-label">查询类型</span>
+                                            <div class="form-body">
+                                                <ul class="radio-list radio-list-station">
+                                                    <li> <i></i>到达站 </li>
+                                                    <li> <i></i>出发站 </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">车站</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="hidden" value=""> <input
+                                                        type="text" class="input" value=""> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">车次</label>
+                                            <div class="form-body">
+                                                <div class="input-box late_poit"> <input type="text" class="input"
+                                                        value=""> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="jianpiaokouitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>乘车日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"> <i
+                                                        class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>车次</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="text" class="input search-input">
+                                                    <input class="input" type="hidden">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>乘车站</label>
+                                            <div class="form-body">
+                                                <div class="input-box">
+                                                    <div class="model-select-box">
+                                                        <div class="model-select-text ">请选择车站 </div>
+                                                        <ul class="model-select-option train_hide"> </ul> <input
+                                                            type="hidden" class="selected-input" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="qishoushijianitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>起售日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"
+                                                        value=""> <i class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>起售车站</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input id="start_sell" type="hidden" value="">
+                                                    <input type="text" class="input" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                                <div class="search-body-item" style="display: none;" id="tianqichaxunitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <label class="form-label"> <b
+                                                    class="required">*</b>目的地</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="hidden" value=""> <input
+                                                        type="text" class="input" value=""> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-main-item" style="display: none;" id="dingcanitem">
+                        <div class="search-main-box">
+                            <div class="search-main-head">
+                                <ul>
+                                    <li style="width: 50%" id="yuding"><a><i class="icon icon-shijian"></i>预订</a>
+                                    </li>
+                                    <li style="width: 50%"><a><i class="icon icon-jianpiaokou"></i>餐饮订单</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-main-body">
+                                <div class="search-body-item dinner-yuding" id="yudingitem">
+                                    <div class="search-form">
+                                        <div class="form-item"> <label class="form-label">出发日期</label>
+                                            <div class="form-body">
+                                                <div class="input-box input-data"> <input type="text" class="input"> <i
+                                                        class="icon icon-date"></i> </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item"> <label class="form-label">出发车次</label>
+                                            <div class="form-body">
+                                                <div class="input-box"> <input type="text" class="input search-input">
+                                                    <input class="input" type="hidden">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item form-item-btn cx-zwd dinner-search"> <a href=""
+                                                class="btn btn-primary form-block">查&nbsp;&nbsp;&nbsp;&nbsp;询</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage">
+            <ul class="service-list">
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s2"></i>
+                        <div>重点旅客预约</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s6"></i>
+                        <div>遗失物品查找</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s4"></i>
+                        <div>约车服务</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s5"></i>
+                        <div>便民托运</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s3"></i>
+                        <div>车站引导</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="service-icon ico-s7"></i>
+                        <div>站车风采</div>
+                    </a>
+                </li>
+                <li class="last">
+                    <a href="">
+                        <i class="service-icon ico-s9"></i>
+                        <div>用户反馈</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="service-value-add">
+                <ul class="service-value-add-list">
+                    <li style="margin-bottom: 10px;">
+                        <a href="#">
+                            <img src="./img/abanner01.jpg">
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#">
+                            <img src="./img/abanner02.jpg">
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#">
+                            <img src="./img/abanner05.jpg">
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <a href="#">
+                            <img src="./img/abanner06.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="railway-travel">
+                <div class="railway-travel-head">
+                    <h3 class="railway-travel-title">铁路旅游</h3>
+                    <a href="" class="more">更多&gt;</a>
+                </div>
+                <div class="travel-train">
+                    <ul class="travel-train-list" id="travelList">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="news-blk">
+                <div class="blk-head">
+                    <ul class="lists">
+                        <li id="news" onclick="shownews(id)">
+                            <a>最新发布</a>
+                        </li>
+                        <li id="question" onclick="shownews(id)">
+                            <a>常见问题</a>
+                        </li>
+                        <li id="shixin" onclick="shownews(id)">
+                            <a>信用信息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blk-body">
+                    <div class="blk-item" style="display: none;" id="newsitem">
+                        <div class="news-index">
+                            <ul class="news-index-list state" id="newsList">
+                            </ul>
+                            <div class="news-more">
+                                <a href="">更多&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 常见问题 -->
+                    <div class="blk-item" style="display: none;" id="questionitem">
+                        <div class="news-index">
+                            <ul class="news-index-list question" id="questionList">
+
+                            </ul>
+                            <div class="news-more">
+                                <a href="">更多&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 信用信息 -->
+                    <div class="blk-item" style="display: none;" id="shixinitem">
+                        <div class="discredit-list-box">
+                            <dl class="discredit-list">
+                                <dt>
+                                    <i class="icon icon-shixin01"></i>失信被执行人(自然人)公示
+                                </dt>
+                                <div style="height: 128px;overflow: hidden" class="demo">
+                                    <div class="dd_left">
+                                        <img style="display: block;width: 100px;height: 80px;margin:15px auto"
+                                            src="./img/empty.png">
+                                        <div style="color: #999">暂无公示数据</div>
+                                    </div>
+                                </div>
+                                <dd class="more">
+                                    <a href="">更多&gt;</a>
+                                </dd>
+                            </dl>
+                            <dl class="discredit-list">
+                                <dt>
+                                    <i class="icon icon-shixin02"></i>失信已执行人(自然人)公布
+                                </dt>
+                                <div style="height: 128px;overflow: hidden" class="demo1">
+                                    <div class="dd_right" id="discreditList">
+                                    </div>
+                                </div>
+                                <dd class="more">
+                                    <a href="">更多&gt;</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-con wrapper">
+                <div class="foot-links" style="margin-right: 20px">
+                    <h2 class="foot-con-title">友情链接</h2>
+                    <ul class="foot-links-list">
+                        <li>
+                            <a title="中国国家铁路集团有限公司" href="">
+                                <img src="./img/link05.png" alt="中国国家铁路集团有限公司">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="中国铁路财产保险自保有限公司" href="">
+                                <img src="./img/link02.png" alt="中国铁路财产保险自保有限公司">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="中国铁路95306网" href="">
+                                <img src="./img/link03.png" alt="中国铁路95306网">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="中铁快运股份有限公司" href="">
+                                <img src="./img/link04.png" alt="中铁快运股份有限公司">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="foot-code">
+                    <li style="width: 140px">
+                        <h2 class="foot-con-title">中国铁路官方微信</h2>
+                        <div class="code-pic">
+                            <img src="./img/zgtlwb.png" alt="中国铁路官方微信">
+                        </div>
+                    </li>
+                    <li style="width: 140px">
+                        <h2 class="foot-con-title">中国铁路官方微博</h2>
+                        <div class="code-pic">
+                            <img src="./img/zgtlwx.png" alt="中国铁路官方微博">
+                        </div>
+                    </li>
+                    <li style="width: 110px">
+                        <h2 class="foot-con-title">12306 公众号</h2>
+                        <div class="code-pic">
+                            <img src="./img/public.png" alt="12306 公众号">
+                        </div>
+                    </li>
+                    <li style="width: 110px">
+                        <h2 class="foot-con-title">铁路12306</h2>
+                        <div class="code-pic">
+                            <img src="./img/download.png" alt="铁路12306">
+                            <div class="code-tips">
+                                官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-txt" style="position: relative;">
+                <p>
+                    <span class="mr">版权所有©2008-2023</span>
+                    <span class="mr">中国铁道科学研究院集团有限公司</span>
+                    <span>技术支持：铁旅科技有限公司</span>
+                </p>
+                <p>
+                    <span class="mr">
+                        <img src="./img/gongan.png" alt="公安" style="width:13px">
+                        <a href="#" style="color:#c1c1c1">京公网安备 11010802038392号</a>
+                    </span>
+                    <span class="mr">|</span>
+                    <span class="mr">京ICP备05020493号-4</span>
+                    <span class="mr">|</span>
+                    <span>ICP证：京B2-20202537</span>
+                </p>
+                <div style="position: absolute;top: 17px;left: 50%;margin-left: 465px;">
+                    <img src="./img/footer-slh.jpg" style="display: block;width: 130px;height: 46px;" alt="适老化无障碍服务">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

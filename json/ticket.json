@@ -1,0 +1,1041 @@
+[{
+        "trainNumber": "G1000",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1001",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 5,
+            "price": 1300
+        },
+        "firstClassSeat": {
+            "quantity": 12,
+            "price": 850
+        },
+        "secondClassSeat": {
+            "quantity": 48,
+            "price": 520
+        },
+        "advancedSoftSleeper": {
+            "quantity": 4,
+            "price": 1550
+        },
+        "softSleeper": {
+            "quantity": 20,
+            "price": 1050
+        },
+        "movingSleeper": {
+            "quantity": 2,
+            "price": 620
+        },
+        "hardSleeper": {
+            "quantity": 92,
+            "price": 420
+        },
+        "softSeat": {
+            "quantity": 14,
+            "price": 320
+        },
+        "hardSeat": {
+            "quantity": 45,
+            "price": 220
+        },
+        "noSeat": {
+            "quantity": 25,
+            "price": 60
+        },
+        "other": {
+            "quantity": 6,
+            "price": 110
+        }
+    },
+    {
+        "trainNumber": "G1002",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 4,
+            "price": 1250
+        },
+        "firstClassSeat": {
+            "quantity": 14,
+            "price": 820
+        },
+        "secondClassSeat": {
+            "quantity": 49,
+            "price": 530
+        },
+        "advancedSoftSleeper": {
+            "quantity": 3,
+            "price": 1600
+        },
+        "softSleeper": {
+            "quantity": 22,
+            "price": 1100
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 630
+        },
+        "hardSleeper": {
+            "quantity": 89,
+            "price": 430
+        },
+        "softSeat": {
+            "quantity": 15,
+            "price": 330
+        },
+        "hardSeat": {
+            "quantity": 49,
+            "price": 230
+        },
+        "noSeat": {
+            "quantity": 20,
+            "price": 70
+        },
+        "other": {
+            "quantity": 7,
+            "price": 120
+        }
+    },
+    {
+        "trainNumber": "G1003",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 6,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 17,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 40,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 5,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 30,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 5,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 82,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 19,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 42,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 22,
+            "price": 50
+        },
+        "other": {
+            "quantity": 9,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1005",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1000",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1001",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 5,
+            "price": 1300
+        },
+        "firstClassSeat": {
+            "quantity": 12,
+            "price": 850
+        },
+        "secondClassSeat": {
+            "quantity": 48,
+            "price": 520
+        },
+        "advancedSoftSleeper": {
+            "quantity": 4,
+            "price": 1550
+        },
+        "softSleeper": {
+            "quantity": 20,
+            "price": 1050
+        },
+        "movingSleeper": {
+            "quantity": 2,
+            "price": 620
+        },
+        "hardSleeper": {
+            "quantity": 92,
+            "price": 420
+        },
+        "softSeat": {
+            "quantity": 14,
+            "price": 320
+        },
+        "hardSeat": {
+            "quantity": 45,
+            "price": 220
+        },
+        "noSeat": {
+            "quantity": 25,
+            "price": 60
+        },
+        "other": {
+            "quantity": 6,
+            "price": 110
+        }
+    },
+    {
+        "trainNumber": "G1002",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 4,
+            "price": 1250
+        },
+        "firstClassSeat": {
+            "quantity": 14,
+            "price": 820
+        },
+        "secondClassSeat": {
+            "quantity": 49,
+            "price": 530
+        },
+        "advancedSoftSleeper": {
+            "quantity": 3,
+            "price": 1600
+        },
+        "softSleeper": {
+            "quantity": 22,
+            "price": 1100
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 630
+        },
+        "hardSleeper": {
+            "quantity": 89,
+            "price": 430
+        },
+        "softSeat": {
+            "quantity": 15,
+            "price": 330
+        },
+        "hardSeat": {
+            "quantity": 49,
+            "price": 230
+        },
+        "noSeat": {
+            "quantity": 20,
+            "price": 70
+        },
+        "other": {
+            "quantity": 7,
+            "price": 120
+        }
+    },
+    {
+        "trainNumber": "G1003",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 6,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 17,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 40,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 5,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 30,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 5,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 82,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 19,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 42,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 22,
+            "price": 50
+        },
+        "other": {
+            "quantity": 9,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1005",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1000",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1001",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 5,
+            "price": 1300
+        },
+        "firstClassSeat": {
+            "quantity": 12,
+            "price": 850
+        },
+        "secondClassSeat": {
+            "quantity": 48,
+            "price": 520
+        },
+        "advancedSoftSleeper": {
+            "quantity": 4,
+            "price": 1550
+        },
+        "softSleeper": {
+            "quantity": 20,
+            "price": 1050
+        },
+        "movingSleeper": {
+            "quantity": 2,
+            "price": 620
+        },
+        "hardSleeper": {
+            "quantity": 92,
+            "price": 420
+        },
+        "softSeat": {
+            "quantity": 14,
+            "price": 320
+        },
+        "hardSeat": {
+            "quantity": 45,
+            "price": 220
+        },
+        "noSeat": {
+            "quantity": 25,
+            "price": 60
+        },
+        "other": {
+            "quantity": 6,
+            "price": 110
+        }
+    },
+    {
+        "trainNumber": "G1002",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 4,
+            "price": 1250
+        },
+        "firstClassSeat": {
+            "quantity": 14,
+            "price": 820
+        },
+        "secondClassSeat": {
+            "quantity": 49,
+            "price": 530
+        },
+        "advancedSoftSleeper": {
+            "quantity": 3,
+            "price": 1600
+        },
+        "softSleeper": {
+            "quantity": 22,
+            "price": 1100
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 630
+        },
+        "hardSleeper": {
+            "quantity": 89,
+            "price": 430
+        },
+        "softSeat": {
+            "quantity": 15,
+            "price": 330
+        },
+        "hardSeat": {
+            "quantity": 49,
+            "price": 230
+        },
+        "noSeat": {
+            "quantity": 20,
+            "price": 70
+        },
+        "other": {
+            "quantity": 7,
+            "price": 120
+        }
+    },
+    {
+        "trainNumber": "G1003",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 6,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 17,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 40,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 5,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 30,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 5,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 82,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 19,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 42,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 22,
+            "price": 50
+        },
+        "other": {
+            "quantity": 9,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1005",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1000",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1001",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 5,
+            "price": 1300
+        },
+        "firstClassSeat": {
+            "quantity": 12,
+            "price": 850
+        },
+        "secondClassSeat": {
+            "quantity": 48,
+            "price": 520
+        },
+        "advancedSoftSleeper": {
+            "quantity": 4,
+            "price": 1550
+        },
+        "softSleeper": {
+            "quantity": 20,
+            "price": 1050
+        },
+        "movingSleeper": {
+            "quantity": 2,
+            "price": 620
+        },
+        "hardSleeper": {
+            "quantity": 92,
+            "price": 420
+        },
+        "softSeat": {
+            "quantity": 14,
+            "price": 320
+        },
+        "hardSeat": {
+            "quantity": 45,
+            "price": 220
+        },
+        "noSeat": {
+            "quantity": 25,
+            "price": 60
+        },
+        "other": {
+            "quantity": 6,
+            "price": 110
+        }
+    },
+    {
+        "trainNumber": "G1002",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 4,
+            "price": 1250
+        },
+        "firstClassSeat": {
+            "quantity": 14,
+            "price": 820
+        },
+        "secondClassSeat": {
+            "quantity": 49,
+            "price": 530
+        },
+        "advancedSoftSleeper": {
+            "quantity": 3,
+            "price": 1600
+        },
+        "softSleeper": {
+            "quantity": 22,
+            "price": 1100
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 630
+        },
+        "hardSleeper": {
+            "quantity": 89,
+            "price": 430
+        },
+        "softSeat": {
+            "quantity": 15,
+            "price": 330
+        },
+        "hardSeat": {
+            "quantity": 49,
+            "price": 230
+        },
+        "noSeat": {
+            "quantity": 20,
+            "price": 70
+        },
+        "other": {
+            "quantity": 7,
+            "price": 120
+        }
+    },
+    {
+        "trainNumber": "G1003",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 6,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 17,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 40,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 5,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 30,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 5,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 82,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 19,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 42,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 22,
+            "price": 50
+        },
+        "other": {
+            "quantity": 9,
+            "price": 100
+        }
+    },
+    {
+        "trainNumber": "G1005",
+        "departureStation": "北京",
+        "destinationStation": "上海",
+        "departureTime": "08:00",
+        "arrivalTime": "12:00",
+        "duration": 4,
+        "businessSeat": {
+            "quantity": 3,
+            "price": 1200
+        },
+        "firstClassSeat": {
+            "quantity": 15,
+            "price": 800
+        },
+        "secondClassSeat": {
+            "quantity": 42,
+            "price": 500
+        },
+        "advancedSoftSleeper": {
+            "quantity": 7,
+            "price": 1500
+        },
+        "softSleeper": {
+            "quantity": 25,
+            "price": 1000
+        },
+        "movingSleeper": {
+            "quantity": 3,
+            "price": 600
+        },
+        "hardSleeper": {
+            "quantity": 87,
+            "price": 400
+        },
+        "softSeat": {
+            "quantity": 18,
+            "price": 300
+        },
+        "hardSeat": {
+            "quantity": 47,
+            "price": 200
+        },
+        "noSeat": {
+            "quantity": 28,
+            "price": 50
+        },
+        "other": {
+            "quantity": 8,
+            "price": 100
+        }
+    }
+]

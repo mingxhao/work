@@ -1,0 +1,180 @@
+a {
+    color: #07f;
+    text-decoration: none;
+    outline: 0;
+}
+
+.content{
+    min-height: 454px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.crumbs {
+    height: 32px;
+    line-height: 32px;
+}
+
+.crumbs a {
+    color: #333;
+}
+
+.layout {
+    border: 1px solid #1678be;
+    background-position: 0 -400px !important;
+    background: url(../img/bg.png) repeat-x;
+}
+
+.layout .lay-head {
+    height: 32px;
+    line-height: 30px;
+    color: #e5f8ff;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+}
+
+.reg-list label.error {
+    display: block;
+    margin-left: 380px;
+    padding-bottom: 4px;
+}
+
+label.error {
+    background: url(../img/icon_wrong.png) left center no-repeat;
+    padding: 0;
+    padding-left: 20px;
+    height: 20px;
+    margin-left: 75px;
+    color: #FF2626;
+    line-height: 20px;
+}
+
+.reg .lay-body {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    border-top: 0;
+}
+
+.reg-list {
+    padding-top: 40px;
+}
+
+.reg-list li {
+    line-height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reg-list .label {
+    display: block;
+    height: 30px;
+    text-align: right;
+    width: 375px;
+    padding-right: 5px;
+}
+
+required {
+    font-size: 16px;
+    color: #f00;
+    font-family: Tahoma;
+    vertical-align: middle;
+    margin-right: 2px;
+    font-weight: 400;
+}
+
+.inptxt {
+    line-height: 18px;
+    border: 1px solid #cfcdc7;
+    background: #fff;
+    color: #999;
+    padding: 5px 0 5px 5px;
+    box-sizing: content-box;
+}
+
+.w200 {
+    width: 195px;
+}
+
+.w200sel {
+    width: 202px;
+}
+
+input {
+    font-size: 12px;
+    font-family: Tahoma;
+    margin: 0;
+    outline: 0;
+}   
+
+.reg-list .tips {
+    display: inline;
+    margin-left: 8px;
+    color: #FF7F00;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+}
+
+.i-ok {
+    width: 14px;
+    background-position: 0 -600px;
+}
+
+.safe-rank {
+    margin-right: 5px;
+    height: 6px;
+    padding: 12px 0;
+    display: flex;
+}
+
+.reg-list .safe-rank span {
+    display: inline;
+}
+
+.rank-a .s1,.rank-b .s1,.rank-c .s1 {
+    background: #f00
+}
+
+.rank-b .s2,.rank-c .s2 {
+    background: #ff9326
+}
+
+.rank-c .s3 {
+    background: #91c41a
+}
+
+.safe-rank span {
+    width: 40px;
+    height: 6px;
+    overflow: hidden;
+    background: #999;
+    margin-right: 1px;
+}
+
+.reg .lay-btn {
+    padding: 0;
+    margin: 50px 0;
+    height: 30px;
+    text-align: center;
+}
+
+.lay-btn a {
+    margin: 0 10px;
+    width: 122px;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-position: 0 0;
+    color: #fff;
+    background: url(../img/bg_btn.png) repeat-x;
+    border-radius: 4px;
+}
+
+select {
+    height: 30px;
+    line-height: 30px;
+}

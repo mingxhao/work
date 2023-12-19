@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0 0 0;
+    background-color: #fff;
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    font-family: Tahoma,"宋体";
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.i-city, .i-date, .i-new, .i-close, .i-card, .i-save, .i-save-dis, .i-del, .i-re, .i-ok, .slideTxt .num, .per-sel h2, .s-box .sub, .order-item-hd .icon-btn, .i-edit, .i-editbtn, .t-list .cdz strong, .up-box-hd a, .add-per span, .i-ok, .txt-wrong, .i-savebtn, .login .w-txt, .i-wrong, .i-clear {
+    background: url(../img/icon.png) no-repeat;
+}
+
+.step li em, .i-change, .i-change2, .i-lock, .i-success, .i-no, .btn-sear-sel span, .find-pass .hd li b, .find-pass .hd li span, .help-tab .hd li b, .help-tab .hd li span, .sear-sel .btn-all {
+    background: url(../img/bg02.png) repeat-x;
+}
+
+.content {
+    width: 980px;
+    min-height: 620px;
+    margin: 0 auto;
+}
+
+.content-lg {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.quick-sear-box {
+    padding: 12px 10px;
+}
+
+.sear-box {
+    height: 48px;
+    padding: 7px 10px;
+    background: #eef1f8;
+    font-size: 12px;
+    border: 1px solid #298cce;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.sear-box-lg.quick-sear-box .dfc {
+    width: 80px;
+    margin-right: 20px;
+}
+
+#queryLeftForm{
+    display: flex;
+}
+
+.sear-box .dfc {
+    margin-right: 5px;
+    width: 60px;
+    background: url(../img/line_sear.png) right center no-repeat;
+}
+
+.sear-box .dfc li {
+    line-height: 20px;
+    height: 20px;
+    padding: 2px;
+}
+
+.sear-box li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.radio {
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+
+input, select, textarea {
+    font-size: 12px;
+    font-family: Tahoma;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    outline: 0;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.sear-box-lg.quick-sear-box .s-info {
+    margin-right: 25px;
+}
+
+.quick-sear-box .s-info {
+    margin-right: 15px;
+}
+
+.s-info ul{
+    display: flex;
+}
+
+.sear-box-lg.quick-sear-box .s-info li {
+    width: 190px;
+}
+
+.quick-sear-box .s-info li {
+    width: 164px;
+}
+
+.s-info li {
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.sear-box li {
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+}
+
+.sear-box .label {
+    display: block;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    padding-right: 2px;
+    text-align: right;
+}
+
+.sear-box .inp-w {
+    position: relative;
+    width: 122px;
+    height: 30px;
+}
+
+.inp-w {
+    position: relative;
+}
+
+.sear-box .inp-w .inp-txt {
+    width: 113px;
+}
+
+.inp-txt {
+    width: 193px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #cfcdc7;
+    background: #fff;
+    padding: 5px 0 5px 5px;
+    color: #999;
+}
+
+.sear-box-lg.quick-sear-box .s-info .i-change {
+    width: 16px;
+    margin-right: 20px;
+}
+
+.s-info .i-change {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-position: -67px -96px;
+    margin-top: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.inp_selected {
+    width: 113px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #cfcdc7;
+    background: #fff;
+    padding: 5px 0 5px 5px;
+    color: #333;
+}
+
+.i-date {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-position: 0 -250px;
+    overflow: hidden;
+}
+
+.no-change .i-date {
+    background-position: 0 -300px;
+}
+
+.sear-box-lg.quick-sear-box .quick-s {
+    padding-left: 25px;
+}
+
+.quick-sear-box .quick-s {
+    width: 184px;
+    height: 58px;
+    overflow: hidden;
+    background: url(../img/line_sear.png) left center no-repeat;
+    padding-left: 15px;
+    margin-top: -5px;
+    display: flex;
+}
+
+.quick-sear-box .quick-s ul {
+    width: 80px;
+    margin-top: 4px;
+}
+
+.quick-sear-box .quick-s ul li {
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+}
+
+.quick-sear-box .quick-s .btn-area {
+    width: 98px;
+    height: 58px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.sear-box .btn-area {
+    width: 204px;
+    margin-top: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.sear-box .btn-area a {
+    margin-right: 10px;
+}
+
+.btn92s {
+    width: 92px;
+}
+
+.btn92s, .btn122s, .btn200s, .btn30s {
+    height: 30px;
+    line-height: 30px;
+    background-position: 0 0;
+    color: #fff;
+}
+
+.sear-box .btn-area {
+    width: 204px;
+    margin-top: 10px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.sear-box .btn-area a {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.btn92s {
+    width: 92px;
+}
+
+.btn92s, .btn122s, .btn200s, .btn30s {
+    height: 30px;
+    line-height: 30px;
+    background-position: 0 0;
+    color: #fff;
+}
+
+.btn92, .btn92s, .btn72, .btn72-no, .btn122, .btn122s, .btn200, .btn200s, .btn-login, .btn30, .btn30s, .btn-disabled {
+    display: inline-block;
+    text-align: center;
+    background: url(../img/bg_btn.png) repeat-x;
+    color: #333;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.quick-sear-box .quick-s .btn-area {
+    width: 98px;
+    height: 58px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.sear-result {
+    height: 23px;
+    line-height: 23px;
+    position: relative;
+    width: 100%;
+    padding: 6px 0;
+    display: flex;
+}
+
+
+.sear-result span {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.check {
+    vertical-align: -3px;
+    _vertical-align: middle;
+    margin-right: 4px;
+}
+
+.sear-result p {
+    height: 23px;
+    line-height: 23px;
+    margin-right: 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.t-list {
+    border: 1px solid #298cce;
+}
+
+.t-list table {
+    border-collapse: separate;
+}
+
+.t-list table {
+    width: 100%;
+}
+
+.t-list table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    background: url(../img/bg_tlisthd.png) top repeat-x;
+    margin-top: 0;
+}
+
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table, td, tr, th {
+    font-size: 12px;
+}
+
+.t-list th {
+    height: 52px;
+    background: url(../img/line_tlisth.png) right center no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+
+.t-list th .b1 {
+    background: url(../img/icon_sj01.png) right center no-repeat;
+    padding-right: 13px;
+}
+
+.t-list th .b2 {
+    background: url(../img/icon_sj02.png) right center no-repeat;
+    padding-right: 13px;
+}
+
+.t-list th .b3 {
+    background: url(../img/icon_sj03.png) right center no-repeat;
+    padding-right: 13px;
+}
+
+.t-list .bgc td {
+    background: #eef1f8;
+}
+
+.t-list td {
+    border-right: 1px solid #b0cedd;
+    border-top: 1px solid #b0cedd;
+    color: #999;
+    height: 36px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.t-list td .ticket-info {
+    width: 354px;
+    height: 36px;
+    line-height: 18px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+.clearfix {
+    display: block;
+}
+
+.t-list .train {
+    width: 95px;
+    height: 36px;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+
+.t-list .train .number {
+    font-size: 16px;
+    color: #333;
+    text-decoration: underline;
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 6px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.t-list .train-type {
+    height: 16px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 0;
+}
+
+.t-list .lookup b {
+    display: block;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    background-position: 0 -55px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+.lookup b, .my dl dt b {
+    background: url(../img/icon8.png) no-repeat;
+}
+.t-list .cdz {
+    width: 100px;
+    float: left;
+}
+
+.t-list .cdz .start-s {
+    background-position: 0 -546px;
+}
+
+.t-list .cdz strong {
+    display: block;
+    padding-left: 18px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    background-position: 0 -446px;
+}
+
+.t-list .cdz .end-s {
+    display: block;
+    background-position: 0 -496px;
+}
+
+.t-list .cds {
+    width: 70px;
+    float: left;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #333;
+}
+
+.t-list .start-t {
+    width: 70px;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    overflow: hidden;
+}
+
+.t-list td .color999 {
+    color: #999;
+}
+
+.t-list td strong {
+    color: #333;
+}
+
+.color999 {
+    color: #999;
+}
+
+.t-list .ls {
+    width: 72px;
+    float: left;
+    color: #333;
+    padding-left: 6px;
+}
+
+.t-list .ls strong {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.t-list .ls {
+    width: 72px;
+    float: left;
+    color: #333;
+    padding-left: 6px;
+}
+
+.tips-txt {
+    background: #fffbe5;
+    border: 1px solid #fbd800;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.tips-txt p {
+    line-height: 20px;
+    color: #666;
+}
+
+.ticket-change-show-box {
+    padding: 25px;
+    border: 1px solid #298cce;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-change-show-box .ticket-change {
+    display: inline-block;
+    margin: 0 45px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    padding: 0 15px;
+    color: #348ff3;
+    position: relative;
+    font-weight: 500;
+}
+
+.ticket-change-show-box .ticket-change:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 20px;
+    height: 1px;
+    background: #dedede;
+}
+
+.ticket-change-show-box .ticket-station {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ticket-change-show-box .ticket-change .icon {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.ticket-change-show-box .ticket-more {
+    color: #348ff3;
+    margin-left: 20px;
+}
+
+.ticket-change-show-box .ticket-more span {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.ticket-change-show-box .ticket-more .icon {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.icon {
+    font-family: "icon" !important;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.t-list .train-type .item-fu {
+    border: 1px solid #ffdbac;
+    color: #ff8000;
+}
+
+.t-list .train-type .train-type-item {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    background: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+    color: #ff8000;
+}
+
+.footer .foot-links-list li {
+    margin: 0 8px 10px 0;
+}
+
+.t-list .t-num {
+    color: #333;
+    font-weight: 700;
+}
+
+.btn72 {
+    position: relative;
+}
+
+.btn72, .btn72-no {
+    height: 30px;
+    line-height: 30px;
+    width: 72px;
+    background-position: 0 -250px;
+    color: #fff;
+}
+
+.btn72:hover {
+    background-position: 0 -300px;
+    color: #fff;
+}

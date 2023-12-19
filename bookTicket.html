@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国铁路12306网站</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/icon-font.css">
+    <link rel="stylesheet" href="./css/bookTicket.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="apex">
+                <div class="main-apex">
+                    <h1 class="logo">
+                        <a href=""></a>
+                    </h1>
+                    <div class="apex-right">
+                        <div class="apex-search">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="搜索车票、餐饮、常旅客、相关规章">
+                                <div class="search-down">
+
+                                </div>
+                                <div class="search-history">
+
+                                </div>
+                            </div>
+                            <a href="" class="search-btn">
+                                <i class="icon icon-search"></i>
+                            </a>
+                        </div>
+                        <ul class="apex-menu">
+                            <li class="menu-line">
+                                <a href="" class="menu-nav-lang">无障碍</a>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line">
+                                <a href="" class="menu-nav-lang">爱心版</a>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-nav">
+                                <a href="" class="menu-nav-lang">English
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="menu-nav-box">
+                                    <li><a href="">简体中文</a></li>
+                                    <li><a href="">English</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-nav">
+                                <a href="" class="menu-nav-lang">我的12306
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="menu-nav-box" stylez="width: 130px;">
+                                    <li><a href="">火车票订单</a></li>
+                                    <li><a href="">候补订单</a></li>
+                                    <li><a href="">计次·定期票订单</a></li>
+                                    <li><a href="">约号订单</a></li>
+                                    <li><a href="">本人车票</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">我的餐饮·特产</a></li>
+                                    <li><a href="">我的保险</a></li>
+                                    <li><a href="">我的会员</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">查看个人信息</a></li>
+                                    <li><a href="">账户安全</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">乘车人</a></li>
+                                    <li><a href="">地址管理</a></li>
+                                    <li class="nav-line"></li>
+                                    <li><a href="">温馨服务查询</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line">|</li>
+                            <li class="menu-line menu-login" style="display:flex; margin-left: 0;" id="noLogin">
+                                <a href="login.html">登录</a>
+                                <a href="regist.html">注册</a>
+                            </li>
+                            <li class="menu-line menu-logout" style="display: none;" id="alreadyLogin">
+                                <span>您好，</span>
+                                <a href="" id="username"></a>
+                                <span>&nbsp;|&nbsp;</span>
+                                <a href="" id="logout">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-box">
+                <ul class="nav">
+                    <li class="nav-btn active" style="width: 145px;">
+                        <a href="index.html" class="nav-logo">首页</a>
+                    </li>
+                    <li class="nav-btn" style="width: 145px;">
+                        <a href="" class="nav-logo">车票<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    购买
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="./bookTicket.html">单程</a></li>
+                                    <li class="nav-con-block"><a href="">往返</a></li>
+                                    <li class="nav-con-block"><a href="">中转换乘</a></li>
+                                    <li class="nav-con-block"><a href="">计次·定期票</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    变更
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">退票</a></li>
+                                    <li class="nav-con-block"><a href="">改签</a></li>
+                                    <li class="nav-con-block"><a href="">变更到站</a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title border-none">
+                                    更多
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">中银铁通卡</a></li>
+                                    <li class="nav-con-block border-none"><a href="">广九直通车</a></li>
+                                    <li class="nav-con-block"><a href="">国际列车</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">团购服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">务工人员</a></li>
+                                    <li class="nav-con-block"><a href="">学生团体</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">会员服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">会员管理</a></li>
+                                    <li class="nav-con-block"><a href="">积分账户</a></li>
+                                    <li class="nav-con-block"><a href="">积分兑换</a></li>
+                                    <li class="nav-con-block"><a href="">会员专享</a></li>
+                                    <li class="nav-con-block border-none"><a href="">会员中心</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">站车服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col4">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">重点旅客预约</a></li>
+                                    <li class="nav-con-block"><a href="">便民托运</a></li>
+                                    <li class="nav-con-block"><a href="">约车服务</a></li>
+                                    <li class="nav-con-block"><a href="">车站引导</a></li>
+                                    <li class="nav-con-block"><a href="">遗失物品查找</a></li>
+                                    <li class="nav-con-block"><a href="">动车组介绍</a></li>
+                                    <li class="nav-con-block"><a href="">定制接送</a></li>
+                                    <li class="nav-con-block"><a href="">接车风采</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">商旅服务<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">餐饮·特产</a></li>
+                                    <li class="nav-con-block"><a href="">旅游</a></li>
+                                    <li class="nav-con-block"><a href="">保险</a></li>
+                                    <li class="nav-con-block border-none"><a href="">雪具快运</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">出行指南<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    常见问题
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">车票</a></li>
+                                    <li class="nav-con-block"><a href="">购票</a></li>
+                                    <li class="nav-con-block"><a href="">改签</a></li>
+                                    <li class="nav-con-block"><a href="">退票</a></li>
+                                    <li class="nav-con-block"><a href="" class="more"> 更多>> </a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title">
+                                    旅客须知
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">身份核验</a></li>
+                                    <li class="nav-con-block"><a href="" class="more">更多>></a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                            <div class="nav-col nav-col2">
+                                <h3 class="nav-title border-none">
+                                    相关章程
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">铁路旅客运输规程</a></li>
+                                    <li class="nav-con-block border-none"><a href="">广深港高速铁路跨境旅客运输组织规则</a></li>
+                                    <li class="nav-con-block"><a href="">铁路旅客禁止、限制携带和托运物品目录</a></li>
+                                    <li class="nav-con-block border-none"><a href="" class="more">更多>></a></li>
+                                    <li class="nav-con-block"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="" class="nav-logo">信息查询<i class="icon icon-down"></i></a>
+                        <div class="nav-nextmainbox">
+                            <div class="nav-col nav-col6">
+                                <h3 class="nav-title border-none">
+                                    常用查询
+                                </h3>
+                                <ul class="nav-con">
+                                    <li class="nav-con-block"><a href="">正晚点</a></li>
+                                    <li class="nav-con-block"><a href="">时刻表</a></li>
+                                    <li class="nav-con-block"><a href="">公布票价</a></li>
+                                    <li class="nav-con-block"><a href="">检票口</a></li>
+                                    <li class="nav-con-block"><a href="">起售时间</a></li>
+                                    <li class="nav-con-block border-none"><a href="">最新发布</a></li>
+                                    <li class="nav-con-block"><a href="">天气</a></li>
+                                    <li class="nav-con-block"><a href="">交通查询</a></li>
+                                    <li class="nav-con-block"><a href="">代售表</a></li>
+                                    <li class="nav-con-block"><a href="">客服电话</a></li>
+                                    <li class="nav-con-block"><a href="">列车状态</a></li>
+                                    <li class="nav-con-block border-none"><a href="">信用信息</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="content content-lg" style="min-height: 497px;" role="main">
+            <div class="sear-box quick-sear-box sear-box-lg">
+                <form id="queryLeftForm">
+                    <div class="dfc" id="dfc">
+                        <ul>
+                            <li><input name="singleRoundType" type="radio" class="radio" checked="checked"
+                                    value="dc">
+                                <label class="cursor">单程</label>
+                            </li>
+                            <li><input name="singleRoundType" type="radio" id="wf" class="radio" value="wc">
+                                <label class="cursor">往返</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="s-info">
+                        <ul>
+                            <li><span class="label"><label>出发地</label>
+                                </span>
+                                <div class="inp-w"><input type="hidden" value="BJP">
+                                    <input autocomplete="off" type="text" class="inp-txt" value="">
+                                </div>
+                            </li>
+                            <li class="i-change i-change2" 
+                                style="background-position: -67px -96px; cursor: pointer;height: 16px;"><a
+                                    href=""
+                                    style="width:1px;height:1px;position:absolute;display:block;"></a></li>
+                            <li><span class="label"><label > 目的地</label>
+                                </span>
+                                <div class="inp-w"><input type="hidden" value="SHH">
+                                    <input autocomplete="off" type="text" class="inp-txt" value="">
+                                </div>
+                            </li>
+                            <li><span class="label"> 出发日</span>
+                                <div class="inp-w" style="z-index:1200"><input aria-label="请输入日期，例如2021杠01杠01"
+                                        autocomplete="off" type="text" class="inp_selected" value="">
+                                    <span class="i-date"></span>
+                                </div>
+                            </li>
+                            <li class="no-change"><span class="label"> 返程日</span>
+                                <div class="inp-w" style="z-index:1100"><input type="text" class="inp-txt"
+                                        value="" disabled="disabled">
+                                    <span class="i-date"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quick-s">
+                        <ul>
+                            <li><input type="radio" id="sf1" class="radio" name="sf" checked="checked">
+                                <label class="cursor">普通</label>
+                            </li>
+                            <li><input type="radio" id="sf2" class="radio" name="sf">
+                                <label class="cursor">学生</label>
+                            </li>
+                        </ul>
+                        <div class="btn-area"><a style="margin-top: 12px;" href="" id="query_ticket"
+                                class="btn92s">查询</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sear-result"><span class="fr"><input type="checkbox"
+                        class="check">
+                    <label style="cursor: pointer;">显示折扣车次</label>
+                    <input type="checkbox" class="check">
+                    <label style="cursor: pointer;">显示积分兑换车次</label>
+                    <input type="checkbox" class="check">
+                    <label style="cursor: pointer;">显示全部可预订车次</label>
+                </span>
+                <p><strong id="data"></strong>共计<strong id="trainum"></strong>个车次</p>
+                <p>您可使用<a style="color:#f80;font-weight: bold;"
+                        href="#">中转换乘</a>功能，查询途中换乘一次的部分列车余票情况。</p>
+            </div>
+            <div class="t-list transfer-ticket-list">
+                <table>
+                    <thead>
+                        <tr class="th" id="float">
+                            <th width="90">车次</th>
+                            <th width="100">出发站<br>
+                                到达站</th>
+                            <th width="82" id="startendtime"><span class="b1" id="s_time" style="cursor: pointer;"><a
+                                        href="" title="按出发时间排序"
+                                        style="width:1px;height:1px;position:absolute;display:block;"></a>出发时间</span><br><span
+                                    class="b2" id="r_time" style="cursor: pointer;"><a href=""
+                                        title="按到达时间排序"
+                                        style="width:1px;height:1px;position:absolute;display:block;"></a>到达时间</span>
+                            </th>
+                            <th width="82"><span class="b3" id="l_s" style="cursor: pointer;">历时</span>
+                            </th>
+                            <th width="66">商务座<br>
+                                特等座</th>
+                            <th width="66">一等座</th>
+                            <th width="66">二等座<br>
+                                二等包座</th>
+                            <th width="66">高级<br>
+                                软卧</th>
+                            <th width="66">软卧<br>
+                                一等卧</th>
+                            <th width="66">动卧</th>
+                            <th width="66">硬卧<br>
+                                二等卧</th>
+                            <th width="66">软座</th>
+                            <th width="66">硬座</th>
+                            <th width="66">无座</th>
+                            <th width="66">其他</th>
+                            <th class="last">备注</th>
+                        </tr>
+                    </thead>
+                    <tbody id="queryLeftTable">
+                    </tbody>
+                </table>
+                <!-- 当查询有余票结果后，在table下显示还可以选择中转换乘查询换乘车次的提示 -->
+                <div class="tips-txt mt10">
+                    <p>如果查询结果中没有满足需求的车次，您还可以使用<a style="color:#07f" href="#">中转换乘</a>
+                        功能，查询途中换乘一次的部分列车余票情况。</p>
+                    <p>显示的价格均为实际活动折扣后票价，供您参考，查看<a style="color:#07f"
+                            href="#">公布票价</a>
+                        。具体票价以您确认支付时实际购买的铺别票价为准。如因运力原因或其他不可控因素导致列车调度调整时，当前车型可能会发生变动。</p>
+                </div>
+                <div class="ticket-change-show-box"><span class="ticket-station">北京</span>
+                    <span class="ticket-change"><i class="icon icon-huancheng"></i>
+                        中转换乘</span>
+                    <span class="ticket-station">上海</span>
+                    <a href="#" class="ticket-more"><span>查询更多中转方案</span>
+                        <i class="icon icon-xiangyou"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-con wrapper">
+            <div class="foot-links" style="margin-right: 20px">
+                <h2 class="foot-con-title">友情链接</h2>
+                <ul class="foot-links-list">
+                    <li>
+                        <a title="中国国家铁路集团有限公司" href="">
+                            <img src="./img/link05.png" alt="中国国家铁路集团有限公司">
+                        </a>
+                    </li>
+                    <li>
+                        <a title="中国铁路财产保险自保有限公司" href="">
+                            <img src="./img/link02.png" alt="中国铁路财产保险自保有限公司">
+                        </a>
+                    </li>
+                    <li>
+                        <a title="中国铁路95306网" href="">
+                            <img src="./img/link03.png" alt="中国铁路95306网">
+                        </a>
+                    </li>
+                    <li>
+                        <a title="中铁快运股份有限公司" href="">
+                            <img src="./img/link04.png" alt="中铁快运股份有限公司">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="foot-code">
+                <li style="width: 140px">
+                    <h2 class="foot-con-title">中国铁路官方微信</h2>
+                    <div class="code-pic">
+                        <img src="./img/zgtlwb.png" alt="中国铁路官方微信">
+                    </div>
+                </li>
+                <li style="width: 140px">
+                    <h2 class="foot-con-title">中国铁路官方微博</h2>
+                    <div class="code-pic">
+                        <img src="./img/zgtlwx.png" alt="中国铁路官方微博">
+                    </div>
+                </li>
+                <li style="width: 110px">
+                    <h2 class="foot-con-title">12306 公众号</h2>
+                    <div class="code-pic">
+                        <img src="./img/public.png" alt="12306 公众号">
+                    </div>
+                </li>
+                <li style="width: 110px">
+                    <h2 class="foot-con-title">铁路12306</h2>
+                    <div class="code-pic">
+                        <img src="./img/download.png" alt="铁路12306">
+                        <div class="code-tips">
+                            官方APP下载,目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-txt" style="position: relative;">
+            <p>
+                <span class="mr">版权所有©2008-2023</span>
+                <span class="mr">中国铁道科学研究院集团有限公司</span>
+                <span>技术支持：铁旅科技有限公司</span>
+            </p>
+            <p>
+                <span class="mr">
+                    <img src="./img/gongan.png" alt="公安" style="width:13px">
+                    <a href="#"
+                        style="color:#c1c1c1">京公网安备 11010802038392号</a>
+                </span>
+                <span class="mr">|</span>
+                <span class="mr">京ICP备05020493号-4</span>
+                <span class="mr">|</span>
+                <span>ICP证：京B2-20202537</span>
+            </p>
+            <div style="position: absolute;top: 17px;left: 50%;margin-left: 465px;">
+                <img src="./img/footer-slh.jpg" style="display: block;width: 130px;height: 46px;">
+            </div>
+        </div>
+    </div>
+    <script src="./js/bookTicket.js"></script>
+</body>
+
+</html>

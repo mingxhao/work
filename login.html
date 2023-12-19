@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国铁路12306网站</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/icon-font.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="init()" class="page-login">
+    <div id="loginPage">
+        <div class="header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <h1 class="logo">
+                        <a href="index.html">中国铁路12306</a>
+                    </h1>
+                    <div class="header-welcome">欢迎登录12306</div>
+                </div>
+            </div>
+        </div>
+        <div class="login-panel">
+            <div class="loginSlide">
+                <div class="body">
+                    <div class="tempWrap" style="overflow: hidden;width: auto;">
+                        <ul style="overflow: hidden;">
+                            <li style="background: url(./img/banner-login-food.jpg) center center no-repeat; float: left;width: 100%;"
+                                class="clone"><a href="#" title="餐饮·特产 带有温度的旅途配餐"></a></li>
+                            <li
+                                style="background: url(./img/banner-login.jpg) center center no-repeat; float: left;width: 100%">
+                                <a style="cursor:auto;" href="javascript:void(0)" role="img"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="head">
+                    <ul>
+                        <li class="on">1</li>
+                        <li class="">2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login-box"
+                style="position: absolute; top: 50%; left: 50%; margin-left: 215px; margin-top: -225px;">
+                <ul class="login-head">
+                    <li class="login-head-code active">
+                        <a href="">账号登录</a>
+                    </li>
+                    <li class="login-head-account"><a href="">扫码登录</a></li>
+                </ul>
+                <div class="login-body">
+                    <div class="login-account" style="display: block;">
+                        <div class="login-item" style="height: 44px">
+                            <label class="item-label" style="top: 11px">
+                                <i class="icon icon-user"></i></label>
+                            <input type="text" class="input" id="userName" placeholder="用户名/邮箱/手机号"
+                                style="height: 44px; line-height: 44px" title="请输入用户名或邮箱或手机号">
+                        </div>
+                        <div class="login-item" style="height: 44px">
+                            <label class="item-label" style="top: 11px"><i class="icon icon-pwd"></i></label>
+                            <input type="password" class="input" id="password" placeholder="密码"
+                                style="height: 44px; line-height: 44px">
+                        </div>
+                        <div class="login-btn">
+                            <a id="login" class="btn btn-primary form-block">立即登录</a>
+                        </div>
+                        <div class="login-text">
+                            <a href="./regist.html" class="text-primary">注册12306账号</a>
+                            |
+                            <a href="#" class="text-lighter">忘记密码？</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-ft">
+                    <p>
+                        铁路12306每日5:00至次日1:00（周二为5:00至23:30）提供购票、改签、变更到站业务办理， 全天均可办理退票等其他服务。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content wrapper">
+                <div class="foot-links" style="margin-right: 20px">
+                    <h2 class="foot-content-title">友情链接</h2>
+                    <ul class="foot-links-list">
+                        <li>
+                            <a href="#" target="_blank" title="中国国家铁路集团有限公司">
+                                <img src="./img/link05.png" alt="中国国家铁路集团有限公司" title="中国国家铁路集团有限公司">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="中国铁路财产保险自保有限公司">
+                                <img src="./img/link02.png" alt="中国铁路财产保险自保有限公司" title="中国铁路财产保险自保有限公司">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="中国铁路95306网">
+                                <img src="./img/link03.png" alt="中国铁路95306网" title="中国铁路95306网">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="中铁快运股份有限公司">
+                                <img src="./img/link04.png" alt="中铁快运股份有限公司" title="中铁快运股份有限公司">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="foot-code">
+                    <li style="width: 140px">
+                        <h2 class="foot-content-title">中国铁路官方微信</h2>
+                        <div class="code-pic">
+                            <img src="./img/zgtlwb.png" title="中国铁路官方微信" alt="中国铁路官方微信">
+                        </div>
+                    </li>
+                    <li style="width: 140px">
+                        <h2 class="foot-content-title">中国铁路官方微博</h2>
+                        <div class="code-pic">
+                            <img src="./img/zgtlwx.png" title="中国铁路官方微博" alt="中国铁路官方微博">
+                        </div>
+                    </li>
+                    <li style="width: 110px">
+                        <h2 class="foot-content-title">12306 公众号</h2>
+                        <div class="code-pic">
+                            <img src="./img/public.png" title="12306 公众号" alt="12306 公众号">
+                        </div>
+                    </li>
+                    <li style="width: 110px">
+                        <h2 class="foot-content-title">铁路12306</h2>
+                        <div class="code-pic">
+                            <img src="./img/download.png" title="铁路12306" alt="铁路12306">
+                            <div class="code-tips">
+                                官方APP下载,目前铁路未授权其他网站或APP开展类似服务内容,敬请广大用户注意。
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-text" style="position: relative;">
+                <p>
+                    <span class="copyright">版权所有©2008-2023</span>
+                    <span>中国铁道科学研究院集团有限公司</span>
+                    <span>技术支持：铁旅科技有限公司</span>
+                </p>
+                <p>
+                    <span class="copyright">
+                        <img src="./img/gongan.png" alt="中国国家铁路集团有限公司" style="width: 13px" title="中国国家铁路集团有限公司">
+                        <a target="blank" href="#" style="color: #c1c1c1">京公网安备 11010802038392号</a>
+                    </span>
+                    <span class="copyright">|</span>
+                    <span class="copyright">京ICP备05020493号-4</span>
+                    <span class="copyright">|</span>
+                    <span>ICP证：京B2-20202537</span>
+                </p>
+                <div style="position: absolute;top: 17px;left: 50%;margin-left: 350px;">
+                    <img src="./img/footer-slh.jpg" style="display: block;width: 130px;height: 46px;" alt="中国国家铁路集团有限公司"
+                        title="中国国家铁路集团有限公司">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

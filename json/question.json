@@ -1,0 +1,11 @@
+[
+    {"url": "gonggao/realNameTicket.html","title": "实名制车票"},
+    {"url": "gonggao/ticketWindow.html","title": "售票窗口购票"},
+    {"url": "gonggao/onlineBooking.html","title": "互联网购票"},
+    {"url": "gonggao/onlineRefund.html","title": "互联网退票"},
+    {"url": "gonggao/luggage.html","title": "随身携带品"},
+    {"url": "gonggao/enterAndExit.html","title": "进出站"},
+    {"url": "gonggao/ticketLost.html","title": "丢失购票时使用的有效身份证件"},
+    {"url": "gonggao/sgc.html","title": "使用居民身份证直接检票乘车"},
+    {"url": "gonggao/gsgcp.html","title": "广深港跨境列车"}
+]
